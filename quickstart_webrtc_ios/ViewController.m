@@ -2,7 +2,7 @@
 #import <BanubaEffectPlayer/BanubaEffectPlayer.h>
 
 static const CGSize EffectPlayerSize = {720, 1280};
-static NSString* const BANUBA_SDK_KEY = <#place your token here#>;
+static NSString* const BANUBA_SDK_KEY = @<#place your token here#>;
 
 @interface ViewController ()
 
@@ -103,6 +103,11 @@ static NSString* const BANUBA_SDK_KEY = <#place your token here#>;
 - (AVCaptureDevice*)findDeviceForPosition:(AVCaptureDevicePosition)position
 {
     NSArray<AVCaptureDevice*>* captureDevices = [RTCCameraVideoCapturer captureDevices];
+    if (captureDevices.count == 0){
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                        reason:@"Cannot find device that supports video capture. Take into the attention, that webRTC doesn't support such devices for simulator. That is why this sample cannot be run in Xcode Simulator."
+                        userInfo:nil];
+    }
     for (AVCaptureDevice* device in captureDevices) {
         if (device.position == position) {
             return device;
