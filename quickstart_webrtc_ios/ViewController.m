@@ -239,7 +239,6 @@ static NSString* const BANUBA_SDK_KEY = @<#place your token here#>;
             imageFormat.resultedImageOrientation = [self getResultImageOrientation:self.orientation];
             imageFormat.needAlphaInOutput = NO;
             imageFormat.isMirrored = YES;
-            imageFormat.isYFlip = YES;
 
             [self.effectPlayer processImage:pixelBuffer
                                  withFormat:&imageFormat
