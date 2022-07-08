@@ -1,5 +1,6 @@
 #import "ViewController.h"
-#import <BNBSdkCore/BNBSdkCore.h>
+#import <BNBSdkCore/BNBOffscreenEffectPlayer.h>
+#import <BNBSdkCore/BNBUtilityManager.h>
 
 static const CGSize EffectPlayerSize = {720, 1280};
 static NSString* const BANUBA_SDK_KEY = @<#place your token here#>;
