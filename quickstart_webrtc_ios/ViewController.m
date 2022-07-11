@@ -1,5 +1,6 @@
 #import "ViewController.h"
-#import <BanubaEffectPlayer/BanubaEffectPlayer.h>
+#import <BNBSdkCore/BNBOffscreenEffectPlayer.h>
+#import <BNBSdkCore/BNBUtilityManager.h>
 
 static const CGSize EffectPlayerSize = {720, 1280};
 static NSString* const BANUBA_SDK_KEY = @<#place your token here#>;
@@ -83,7 +84,7 @@ static NSString* const BANUBA_SDK_KEY = @<#place your token here#>;
     // Path to effects, see copy section of project
     NSString* effectsPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/effects"];
     // Path to BNB resources (NN models)
-    NSString* bundleRoot = [NSBundle bundleForClass:BNBEffectPlayer.self].bundlePath;
+    NSString* bundleRoot = [NSBundle mainBundle].bundlePath;
     NSArray<NSString*>* dir = @[[NSString stringWithFormat:@"%@/bnb-resources", bundleRoot], effectsPath];
 
     // Initialize Banuba SDK

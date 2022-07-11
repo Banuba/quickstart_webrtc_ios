@@ -1,7 +1,8 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '12.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/sdk-banuba/banuba-sdk-podspecs.git'
 
 target 'quickstart_webrtc_ios' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,5 +10,6 @@ target 'quickstart_webrtc_ios' do
 
   # Pods for OCCaptureDemo
   pod 'GoogleWebRTC', '~> 1.1.31999'
+  pod 'BanubaSdk', '> 1'
 
 end

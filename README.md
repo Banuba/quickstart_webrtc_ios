@@ -5,12 +5,10 @@ Please use [v0.x](../../tree/v0.x) branch for SDK version 0.x (e.g. v0.38).
 
 # Getting Started
 
-1. Get the latest Banuba SDK archive for iOS and the client token. Please fill in our form on [form on banuba.com](https://www.banuba.com/face-filters-sdk) website, or contact us via [info@banuba.com](mailto:info@banuba.com).
-2. Copy `BanubaEffectPlayer.xcframework` project folder from the Banuba SDK archive into `Frameworks` dir:
-    `BNBEffectPlayer/bin/BanubaEffectPlayer.xcframework` => `quickstart-ios-swift/Frameworks/`
-3. Copy and Paste your client token into appropriate section of `quickstart-webrtc-ios/quickstart-webrtc-ios/ViewController.m`. See constant BANUBA_SDK_KEY.
-4. Execute 'pod install' to get WebRTC framework.
-5. Open the project in xCode and run the example.
+1. Get the client token. Please fill in our form on [form on banuba.com](https://www.banuba.com/face-filters-sdk) website, or contact us via [info@banuba.com](mailto:info@banuba.com).
+2. Copy and Paste your client token into appropriate section of `quickstart-webrtc-ios/quickstart-webrtc-ios/ViewController.m`. See constant BANUBA_SDK_KEY.
+3. Execute 'pod install' to get the WebRTC framework and the Banuba SDK.
+4. Open the project in XCode and run the example.
 
 # Contributing
 
