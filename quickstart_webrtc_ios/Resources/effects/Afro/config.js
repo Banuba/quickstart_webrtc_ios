@@ -2,13 +2,10 @@ function Effect() {
     var self = this;
 
     this.meshes = [
-        { file: "afro_2.bsm2", anims: [
+        { file: "hair.bsm2", anims: [
             { a: "CINEMA_4D_Main", t: 1000 },
         ] },
         { file: "afro_1.bsm2", anims: [
-            { a: "CINEMA_4D_Main", t: 1000 },
-        ] },
-        { file: "afro_3.bsm2", anims: [
             { a: "CINEMA_4D_Main", t: 1000 },
         ] },
     ];
@@ -26,9 +23,8 @@ function Effect() {
 
     this.init = function() {
         Api.meshfxMsg("spawn", 5, 0, "!glfx_FACE");
-        Api.meshfxMsg("spawn", 0, 0, "afro_2.bsm2");
+        Api.meshfxMsg("spawn", 0, 0, "hair.bsm2");
         Api.meshfxMsg("spawn", 1, 0, "afro_1.bsm2");
-        Api.meshfxMsg("spawn", 2, 0, "afro_3.bsm2");
         Api.meshfxMsg("spawn", 3, 0, "afro_4.bsm2");
         Api.meshfxMsg("spawn", 4, 0, "Morph.bsm2");
 

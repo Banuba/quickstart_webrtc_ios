@@ -419,7 +419,7 @@
             "!glfx_FACE": "$builtin$meshes/face.stream:0",
             "Morph.bsm2": "meshes/Morph.bsm2",
             "afro_1.bsm2": "meshes/afro_1.bsm2",
-            "afro_2.bsm2": "meshes/afro_2.bsm2",
+            "hair.bsm2": "meshes/hair.bsm2",
             "afro_3.bsm2": "meshes/afro_3.bsm2",
             "afro_4.bsm2": "meshes/afro_4.bsm2",
             "camera_surface": "$builtin$meshes/fs_tri"
