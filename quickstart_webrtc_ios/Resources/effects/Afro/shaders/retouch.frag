@@ -83,7 +83,7 @@ vec4 getLuminance4(mat4 color) {
 
 float getLuminance(vec4 color) {
     const vec4 rgb2y = vec4(0.299, 0.587, 0.114, 0.0);
-    return dot(color, rgb2y);
+    return max(dot(color, rgb2y), 0.00001);
 }
 
 vec4 getWeight(float intensity, vec4 nextIntensity) {
@@ -155,5 +155,5 @@ void main()
 
     vec4 makeup2 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_makeup2), uvh );
     res.xyz = mix( res.xyz, makeup2.xyz, makeup2.w );
-    bnb_FragColor = vec4(res.xyz, 1.);
+    bnb_FragColor = res;
 }
